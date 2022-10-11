@@ -10,6 +10,12 @@ $("#start-Button").on("click", function () {
     $("#dataset").text("player-1 Turn");
 
 });
+$('#restart-Button').on("click",function(){
+    restart();
+    count = 9;
+    win = 0;
+    $("#dataset").text("player-1 Turn");
+});
 
 $("#board").on("click", "div", function (e) {
 
